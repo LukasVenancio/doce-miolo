@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cupcakes-app
+  profiles:
+    default: dev
+  jpa:
+    open-in-view: false
+  data:
+    web:
+      pageable:
+        default-page-size: 12
+        max-page-size: 100
+
+jwt:
+  expiration-minutes: ${JWT_EXPIRATION_MINUTES:60}
+
+frete:
+  taxa: ${FRETE_TAXA:8.00}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never

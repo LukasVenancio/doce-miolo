@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf8">
+  <meta name="description" content="Cupcakes artesanais feitos em pequenos lotes, com ingredientes selecionados e personalização ao seu gosto.">
+  <title>Doce Miolo | Cupcakes artesanais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/catalogo-page.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Navegação principal">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">d</span>doce miolo</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html" aria-current="page">Cardápio</a>
+        <a href="pedidos.html">Meus pedidos</a>
+        <a href="admin/produtos.html" data-admin-link class="hidden">Administração</a>
+      </div>
+      <div class="nav-actions">
+        <a class="icon-link" href="carrinho.html" aria-label="Abrir carrinho">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count hidden" data-cart-count>0</span>
+        </a>
+        <a class="button button-small login-link" href="login.html" data-session-link>Entrar</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Pequenos lotes, grandes momentos</p>
+        <h1>Um carinho em forma de cupcake.</h1>
+        <p class="lead">Massa fofinha, cobertura feita à mão e combinações que deixam qualquer pausa mais gostosa.</p>
+        <div class="hero-actions"><a class="button button-light" href="#cardapio">Escolher meus sabores <span aria-hidden="true">→</span></a><a class="button button-outline" style="border-color:white;color:white" href="cadastro.html">Criar minha conta</a></div>
+        <div class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.2 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.2 5.9-.9L12 3Z"/></svg>Feitos fresquinhos todos os dias</div>
+      </div>
+    </section>
+    <section class="section" id="cardapio">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Escolha com calma</p><h2>Nosso cardápio</h2></div>
+          <p class="muted">Sabores artesanais para dividir ou guardar só para você.</p>
+        </div>
+        <div class="filters">
+          <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span class="sr-only">Buscar cupcakes</span><input type="search" data-search placeholder="Buscar por sabor ou ingrediente"></label>
+          <label><span class="sr-only">Filtrar por categoria</span><select class="select" data-category><option value="">Todas as categorias</option></select></label>
+        </div>
+        <div class="product-grid" data-products aria-live="polite"><div class="loading">Buscando sabores...</div></div>
+        <div class="pagination" data-pagination></div>
+      </div>
+    </section>
+    <section class="section benefit-band">
+      <div class="container benefit-grid">
+        <article class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><div><h3>Ingredientes de verdade</h3><p>Receitas cuidadosas, sem atalhos no sabor.</p></div></article>
+        <article class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 8h16l-1 12H5L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/><path d="M9 12h.01M15 12h.01"/></svg></span><div><h3>Feito para você</h3><p>Personalize a combinação e veja o preço na hora.</p></div></article>
+        <article class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg></span><div><h3>Entrega ou retirada</h3><p>Você escolhe como prefere receber seu pedido.</p></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark">d</span>doce miolo</a><p class="footer-copy">Feito com cuidado, em pequenos lotes.</p><p class="footer-copy">© 2026 Doce Miolo</p></div></footer>
+  <div class="toast-region" data-toast-region aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "cupcakes-app",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Testes dos módulos JavaScript da loja virtual de cupcakes",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
+}

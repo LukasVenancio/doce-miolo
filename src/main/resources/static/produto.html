@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fffdf8">
+  <title>Personalize seu cupcake | Doce Miolo</title><link rel="stylesheet" href="css/styles.css"><script type="module" src="js/produto-page.js"></script>
+</head>
+<body>
+  <header class="site-header"><nav class="nav-shell" aria-label="Navegação principal">
+    <a class="brand" href="index.html"><span class="brand-mark">d</span>doce miolo</a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="nav-links" data-nav-links><a href="index.html">Cardápio</a><a href="pedidos.html">Meus pedidos</a><a href="admin/produtos.html" data-admin-link class="hidden">Administração</a></div>
+    <div class="nav-actions"><a class="icon-link" href="carrinho.html" aria-label="Abrir carrinho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count hidden" data-cart-count>0</span></a><a class="button button-small login-link" href="login.html" data-session-link>Entrar</a></div>
+  </nav></header>
+  <main>
+    <section class="page-title"><div class="container"><p class="breadcrumb"><a href="index.html">Cardápio</a> / Personalização</p><h1 data-product-title>Seu próximo favorito</h1><p class="muted" data-product-category></p></div></section>
+    <section class="section"><div class="container content-grid product-detail-layout">
+      <div><img class="product-image" style="border-radius:6px;aspect-ratio:1.55" data-product-image alt="Cupcake selecionado"><div style="padding-top:22px"><p class="eyebrow">Feito artesanalmente</p><p class="lead" data-product-description></p></div></div>
+      <form class="panel stack" data-product-form>
+        <div><p class="eyebrow">Monte do seu jeito</p><h2 style="margin-bottom:5px">Sua combinação</h2><p class="muted" style="margin:0;font-size:13px">Massa, recheio e cobertura são escolhas obrigatórias.</p></div>
+        <div class="notice" data-notice role="alert"></div>
+        <div class="option-columns" data-options></div>
+        <div class="field"><label for="quantidade">Quantidade</label><input id="quantidade" name="quantidade" type="number" min="1" max="50" value="1" required></div>
+        <div class="divider"></div>
+        <div class="product-bottom"><span><span class="muted" style="font-size:12px">Preço unitário estimado</span><strong class="price" style="display:block" data-price></strong></span><button class="button" type="submit">Adicionar ao carrinho</button></div>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark">d</span>doce miolo</a><p class="footer-copy">Feito com cuidado, em pequenos lotes.</p><p class="footer-copy">© 2026 Doce Miolo</p></div></footer><div class="toast-region" data-toast-region aria-live="polite"></div>
+</body>
+</html>
